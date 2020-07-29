@@ -1,0 +1,17 @@
+<script>
+  const authUrl = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&scope=read:user&authorize=1`;
+    fetch(
+      authUrl,
+      {
+        method: 'HEAD',
+        credentials: 'include',
+        mode: 'no-cors'
+      }
+    ).catch(err => {
+      throw err;
+    }).then(() => {
+      window.location = authUrl;
+    });
+  });
+
+</script>
